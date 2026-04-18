@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.sezione-colorata{
+    background-color:rgb(234, 233, 227);
+    padding: 1%;
+    width: 100%;
+}
+.sezione-bianca{
+    background-color: rgb(255, 254, 254);
+    padding: 1%;
+    width: 100%;
+}
+.section-header{
+    padding:1%;
+    border-width: 4px;
+    
+    max-width: 70%;
+    margin: 0 ;
+}
+.grglia-cards{
+   
+    
+    max-width: 95%;
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(3, 1fr); /* creo una griglia con 3 colonne che si dividono equamente lo spazio*/
+    gap: 20px;
+    padding:1%
+}
+.card{
+     transition: all 0.2s ease; /* quando ce un cambiamento,tutte le proprieta che cambniano della card lo faranno in modo fluiodo(ease)*/
+   background: rgb(249, 250, 245);
+  border: 1px solid #e7dcd7;
+  border-radius: 16px;
+  padding: 20px;
+}
+.card:hover {
+  box-shadow: 0 4px 0 #22c55e inset; /*l ombra compare in alto(4px),non sfumata,che va verso la card(inset) */
+}
+.card-emoji{  /* classe generale emoji*/
+   display: flex;  /*centro l emoji*/
+   align-items: center; 
+   justify-content: center;
+    width: 2rem; /* adatto la grandezza al font delle scritte*/
+    height: 2rem;
+    border-radius: 10px;
+}
+.flaming{
+    background-color: rgb(235, 108, 24);
+}
+.molestie{
+    background-color:rgb(155, 219, 219);
+}
+.impersonificazione{
+    background-color:rgb(141, 196, 89);
+}
+.esclusione{
+    background-color: rgb(195, 194, 109);
+}
+.cyberstalking{
+    background-color: rgb(48, 61, 240);
+}
+.discorsi{
+    background-color: beige;
+}

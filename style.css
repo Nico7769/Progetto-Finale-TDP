@@ -1,1 +1,4 @@
-@import url('css/') /*importa i diversi file css in uno
+@import url('css/componenti.css');
+@import url('css/layout.css');
+@import url('css/scritte.css');
+
