@@ -1,3 +1,6 @@
+* {                        /* L'* lo applica a tutte le classi */
+  box-sizing: border-box; /*prima faceva scorrere il sito orizzontalmente perche calcolava la larghezza totale dei contenitori contando  anche il padding*/
+    }
 body{
     margin: 0;
 }
