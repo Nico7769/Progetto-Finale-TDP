@@ -6,6 +6,10 @@
     gap: 20px;
     padding:1%
 }
+.two-columns{
+    grid-template-columns: repeat(2, 1fr);
+
+}
 .card{
      transition: all 0.2s ease; /* quando ce un cambiamento,tutte le proprieta che cambniano della card lo faranno in modo fluiodo(ease)*/
    background: rgb(249, 250, 245);

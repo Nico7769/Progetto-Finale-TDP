@@ -37,11 +37,11 @@
     max-width: 600px; 
     color: rgba(255, 255, 255, 0.7)
 }
-.section-info{
-    color: lightgreen;
+.titoletto-verde{
+    color: rgb(112, 196, 112);
     display: block;
     font-family: 'Syne', sans-serif; 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.1em; 
     margin-top: 20px;
