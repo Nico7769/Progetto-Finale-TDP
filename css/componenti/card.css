@@ -1,10 +1,11 @@
-.grglia-cards{  
+.griglia-cards{  
     max-width: 95%;
     display: grid;
     align-self: center;
     grid-template-columns: repeat(3, 1fr); /* creo una griglia con 3 colonne che si dividono equamente lo spazio*/
     gap: 20px;
-    padding:1%
+    padding:1%;
+    
 }
 .two-columns{
     grid-template-columns: repeat(2, 1fr);
@@ -27,6 +28,8 @@
     width: 2rem; /* adatto la grandezza al font delle scritte*/
     height: 2rem;
     border-radius: 10px;
+    background-color:rgb(249, 250, 245);
+    font-size: 20px;
 }
 .flaming{
     background-color: rgb(235, 108, 24);
@@ -47,14 +50,51 @@
     background-color: beige;
 }
 .card h3{
-    font-size: 15px;
-    font-weight: 549;
+    font-size: 20px;
+    font-weight: 550;
 }
 .card P{
     line-height: 1.3;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 400;
    
+}
+.card-elenco{
+    list-style: none; /*elimina le cose automatiche del tag ul*/
+  padding: 0;      /* allinea l elenco con le scritte sopra*/
+  margin: 20px 0;  /* Gestisci solo lo spazio sopra/sotto */
+}
+.card-elenco li{
+    display: flex; /* Allinea numero e testo sulla stessa riga */
+    align-items: flex-start; /* Dice al numero di restare ancorato in alto (allineato alla prima riga di testo) invece di scendere a metà altezza se il paragrafo diventa molto lungo. */
+  margin-bottom: 15px; /* Spazio tra i punti dell'elenco */
+
+}
+.numero-elenco{
+    display: flex;
+  align-items: center; /*centra il numero nel cerchio*/
+  justify-content: center;
+  
+  /* Dimensioni e stile */
+  min-width: 24px;   /*  evita che il cerchio si schiacci */
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  
+  /* Testo numero */
+  font-size: 12px;
+  font-weight: bold;
+  
+  /* Spaziatura */
+  margin-right: 12px;
+  flex-shrink: 0;    /* Impedisce al cerchio di rimpicciolirsi se il testo è lungo */
+  
+  
+}
+.card-elenco p{
+    margin: 0;         /* Rimuove i margini che spingono il testo in basso */
+  line-height: 24px; /* Uguale all'altezza del numero per un allineamento perfetto sulla prima riga */
+  font-size: 15px;
 }
 .support-card {
     background: rgba(255,255,255,0.08);

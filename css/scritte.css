@@ -1,5 +1,5 @@
 .section-title{
-    font-size: 30px;        
+    font-size: 35px;        
     font-weight: 790;
     letter-spacing: -1.5px; /*cambia spazio tra lettere*/
     line-height: 1.1;  /*cambia spazio tra le righe*/     
@@ -12,7 +12,7 @@
 }
 .section-subtitle{
     margin-top: 0;
-    font-size: 13px;      
+    font-size: 15px;      
     font-weight: 400;
     line-height: 1.6;
     color: #4c4b4b;            
