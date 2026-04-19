@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /*cliccando sui link,non "teletrasportera" ma fara un'animazione fluida per arrivare alla sezione*/
+}
 * {                        /* L'* lo applica a tutte le classi */
   box-sizing: border-box; /*prima faceva scorrere il sito orizzontalmente perche calcolava la larghezza totale dei contenitori contando  anche il padding*/
     }
