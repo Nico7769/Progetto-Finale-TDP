@@ -1,6 +1,4 @@
-.grglia-cards{
-   
-    
+.grglia-cards{  
     max-width: 95%;
     display: grid;
     align-self: center;
@@ -53,4 +51,55 @@
     font-size: 11px;
     font-weight: 400;
    
+}
+.support-card {
+    background: rgba(255,255,255,0.08);
+    border-radius:30px ;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.12);
+    max-width: 400px;
+    
+    
+}
+.support-number {
+    font-family: oldstyle-nums;
+    font-size: 32px;
+    font-weight: 800;
+    color: #A8D5BA;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+.support-name {
+    font-family: 'Inter', sans-serif; 
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px; 
+    color:white;
+    font-weight: bolder;
+    
+}
+.support-desc { 
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px; 
+    color: rgba(255, 255, 255, 0.7)
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  
+}
+.reveal{
+    background: rgba(255,255,255,0.08);
+    border-radius:30px ;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.12);
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 4%;
 }

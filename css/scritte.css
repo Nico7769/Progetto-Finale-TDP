@@ -20,3 +20,39 @@
     letter-spacing: 1.2;       
     
 }
+.section-title-informazioni{
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 0.95; 
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+   
+}
+.section-subtitle-information{
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px; 
+    color: rgba(255, 255, 255, 0.7)
+}
+.section-info{
+    color: lightgreen;
+    display: block;
+    font-family: 'Syne', sans-serif; 
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em; 
+    margin-top: 20px;
+    padding-top: 30px;
+    opacity: 0.8;
+}
+.little-text{
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+    line-height: 1.6;
+    color:white;
+    font-weight: bolder;
+
+}
