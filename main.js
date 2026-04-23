@@ -1,52 +1,52 @@
 const scenarios = [
-  {
+   {
     situation: "Sei nel gruppo WhatsApp della classe. Un compagno inizia a mandare meme offensivi su Sofia, che non è nel gruppo. Tutti ridono e mandano emoji. Sofia non sa nulla.",
     question: "Cosa è corretto fare?",
     options: [
-      { text: "Mandi un emoji di risata per non sembrare antipatico", correct: false, feedback: "Sbagliato. Anche solo un like o un'emoji amplifica il fenomeno e indica approvazione." },
-      { text: "Esci silenziosamente dal gruppo senza fare nulla", correct: false, feedback: "Meglio che partecipare, ma non abbastanza. Uscire non ferma il comportamento abusivo." },
-      { text: "Scrivi nel gruppo che non è divertente e avvisi Sofia privatamente", correct: true, feedback: "Ottima scelta. Stai usando la tua voce per difendere qualcuno e rompi il silenzio complice." },
-      { text: "Fai uno screenshot e lo mandi ad altri amici per mostrare cosa succede", correct: false, feedback: "Peggiora la situazione. Diffondere screenshot aumenta il danno per la vittima." }
+      { text: "Mandi un emoji di risata per non sembrare antipatico", correct: false, feedback: "Sbagliato. Anche solo un like o un'emoji amplifica il fenomeno e indica approvazione. Stai diventando complice, non un semplice spettatore." },
+      { text: "Esci silenziosamente dal gruppo senza fare nulla", correct: false, feedback: "Meglio che partecipare, ma non abbastanza. Uscire senza agire non aiuta Sofia e non ferma il comportamento abusivo." },
+      { text: "Scrivi nel gruppo che non è divertente e che non va fatto, poi avvisi Sofia privatamente", correct: true, feedback: "Ottima scelta. Stai usando la tua voce per difendere qualcuno. Segnalare al gruppo cambia le dinamiche sociali e avvisare Sofia le dà modo di tutelarsi." },
+      { text: "Fai uno screenshot e lo mandi ad altri amici per mostrare cosa succede", correct: false, feedback: "Peggiora la situazione. Diffondere screenshot di cyberbullismo equivale a diffondere i contenuti offensivi, aumentando il danno per la vittima." }
     ]
   },
   {
-    situation: "Ricevi un messaggio su Instagram da uno sconosciuto che dice di conoscere amici tuoi. Ti chiede una foto e dice che se non la mandi 'ci sono le conseguenze'.",
+    situation: "Ricevi un messaggio su Instagram da uno sconosciuto che dice di conoscere amici tuoi. Ti chiede una foto e dice che se non la mandi 'ci sono le conseguenze'. Hai 14 anni.",
     question: "Qual è la risposta più sicura?",
     options: [
-      { text: "Chiedi chi è per capire se lo conosci davvero", correct: false, feedback: "Rischioso. Gli estorsori usano spesso identità rubate per sembrare credibili." },
-      { text: "Non rispondi, blocchi il profilo e lo segnali", correct: true, feedback: "Perfetto. Questa è sextortion. Blocca, segnala e parla subito con un adulto." },
-      { text: "Mandi una foto innocua per calmarlo", correct: false, feedback: "Mai farlo. Rispondere alle minacce dimostra che la tattica funziona." },
-      { text: "Minacci a tua volta di denunciarlo", correct: false, feedback: "Rispondere ti espone. Meglio il silenzio totale e la segnalazione." }
+      { text: "Chiedi chi è per capire se lo conosci davvero", correct: false, feedback: "Rischioso. Gli estorsori usano spesso nomi o foto di persone reali per sembrare credibili. Rispondere li incoraggia a continuare." },
+      { text: "Non rispondi, blocchi il profilo e lo segnali a Instagram e a un genitore", correct: true, feedback: "Perfetto. Questa è sextortion, un reato grave. Non rispondere mai alle minacce. Blocca, segnala e parla subito con un adulto. La Polizia Postale può intervenire." },
+      { text: "Mandi una foto innocua per calmarlo", correct: false, feedback: "Mai farlo. Rispondere alle minacce dimostra che la tattica funziona. La persona chiederà sempre di più, escalando le richieste." },
+      { text: "Minacci a tua volta di denunciarlo", correct: false, feedback: "Rispondere con minacce ti espone e prolunga il contatto con una persona pericolosa. Meglio il silenzio totale e la segnalazione." }
     ]
   },
   {
-    situation: "Il tuo migliore amico Marco vuole creare un profilo Instagram falso con il nome di Giulia per vendicarsi. Ti chiede di aiutarlo.",
+    situation: "Il tuo migliore amico Marco ha litigato con Giulia. Per vendicarsi vuole creare un profilo Instagram falso con il nome di Giulia e pubblicare cose imbarazzanti. Ti chiede di aiutarlo.",
     question: "Come rispondi a Marco?",
     options: [
-      { text: "Lo aiuti perché è il tuo migliore amico", correct: false, feedback: "Sbagliato. L'amicizia non giustifica un reato come il furto d'identità." },
-      { text: "Non lo aiuti ma non dici nulla", correct: false, feedback: "Il silenzio complice ti rende moralmente responsabile del danno." },
-      { text: "Gli spieghi che è illegale e potrebbe avere conseguenze penali", correct: true, feedback: "Corretto. Un vero amico evita che l'altro commetta un errore grave." },
-      { text: "Denunci subito Marco alla polizia senza parlargli", correct: false, feedback: "Prima di denunciare, tenta sempre di dissuaderlo direttamente." }
+      { text: "Lo aiuti perché è il tuo migliore amico e Giulia è nel torto", correct: false, feedback: "Sbagliato. L'amicizia non giustifica un reato. Questo comportamento configura impersonation e diffamazione aggravata, reati penali anche per i minori." },
+      { text: "Non lo aiuti ma non dici nulla per non rovinare l'amicizia", correct: false, feedback: "Il silenzio complice ti rende moralmente responsabile. Se sai che un reato sta per essere commesso e non lo impedisci, contribuisci al danno." },
+      { text: "Gli spieghi che quello che vuole fare è illegale e potrebbe avere conseguenze penali, poi provi a calmarlo", correct: true, feedback: "Corretto. Un vero amico non lascia che l'altro commetta un errore che può rovinare la sua vita. Spiegare le conseguenze legali può davvero dissuaderlo." },
+      { text: "Denunci subito Marco alla polizia senza parlargli", correct: false, feedback: "Prima di denunciare, tenta sempre di dissuaderlo direttamente. Una denuncia immediata prima del dialogo potrebbe essere sproporzionata se il fatto non è ancora avvenuto." }
     ]
   },
   {
-    situation: "Noti che Luca riceve insulti da un gruppo scolastico da cui è stato escluso. Luca ti chiede di non dire niente.",
+    situation: "Noti che Luca, un tuo compagno timido, sembra sempre più triste e isolato. Un giorno vedi sul suo telefono messaggi di insulti da un gruppo scolastico da cui è stato escluso. Luca ti chiede di non dire niente.",
     question: "Rispetti il desiderio di Luca?",
     options: [
-      { text: "Sì, rispetti il segreto. Non è affar tuo.", correct: false, feedback: "Sbagliato. Il silenzio protegge il bullo, non la vittima." },
-      { text: "Parli con Luca e gli offri di accompagnarlo da un adulto", correct: true, feedback: "Risposta eccellente. Rispetti la sua dignità ma agisci per aiutarlo." },
-      { text: "Vai subito dall'insegnante senza dirlo a Luca", correct: false, feedback: "Agire senza coinvolgere Luca può farlo sentire tradito." },
-      { text: "Entri nel gruppo e difendi Luca pubblicamente", correct: false, feedback: "Potrebbe scatenare ulteriori reazioni negative." }
+      { text: "Sì, rispetti il segreto. Non è affar tuo.", correct: false, feedback: "Sbagliato. Quando qualcuno sta soffrendo, rispettare il segreto può essere pericoloso. Il silenzio protegge il bullo, non la vittima." },
+      { text: "Parli con Luca di quello che hai visto e gli spieghi perché è importante dirlo a un adulto, offrendogli di accompagnarlo", correct: true, feedback: "Risposta eccellente. Rispetti la sua dignità ma non resti passivo. Offrirsi di accompagnarlo abbassa il costo emotivo del chiedere aiuto." },
+      { text: "Vai subito dall'insegnante senza dirlo a Luca", correct: false, feedback: "Agire senza coinvolgere Luca può farlo sentire tradito e meno in controllo della situazione. Meglio includerlo nel processo." },
+      { text: "Entri nel gruppo e difendi Luca pubblicamente", correct: false, feedback: "Potrebbe scatenare ulteriori reazioni negative. L'intervento diretto online di un singolo raramente risolve il problema e può peggiorarlo." }
     ]
   },
   {
-    situation: "Vedi un video virale in cui si vede un ragazzo della tua scuola in una situazione imbarazzante, ripreso di nascosto.",
+    situation: "Sei online e vedi un video virale in cui si vede un ragazzo della tua scuola in una situazione imbarazzante, ripreso di nascosto. Il video ha già centinaia di condivisioni.",
     question: "Cosa fai?",
     options: [
-      { text: "Lo condividi anche tu perché tanto è già virale", correct: false, feedback: "Sbagliato. Ogni condivisione aumenta il danno." },
-      { text: "Lo guardi ma non lo condividi", correct: false, feedback: "Meglio, ma non aiuta la vittima a fermare la diffusione." },
-      { text: "Lo segnali sulle piattaforme e avvisi un adulto", correct: true, feedback: "Corretto. La segnalazione massiva accelera la rimozione del video." },
-      { text: "Scarichi il video come prova", correct: false, feedback: "Non farlo: detenere video non consensuali può essere illegale." }
+      { text: "Lo condividi anche tu perché tanto è già virale", correct: false, feedback: "Sbagliato. 'Tanto è già virale' non è una giustificazione. Ogni condivisione aumenta il danno e ti rende corresponsabile della diffusione di un contenuto non consensuale." },
+      { text: "Lo guardi ma non lo condividi", correct: false, feedback: "Meglio, ma non abbastanza. Guardarlo e non fare nulla non aiuta la vittima a fermare la diffusione." },
+      { text: "Lo segnali immediatamente su tutte le piattaforme dove lo trovi e avvisi il ragazzo o un adulto di fiducia", correct: true, feedback: "Corretto. La segnalazione massiva accelera la rimozione. La piattaforma, se riceve molte segnalazioni, deve agire. Stai esercitando la tua cittadinanza digitale." },
+      { text: "Scarichi il video come prova prima di segnalarlo", correct: false, feedback: "Non scaricare mai video non consensuali: anche detenerli può essere illegale. Segnala senza scaricare." }
     ]
   }
 ];
@@ -126,10 +126,11 @@ function showResult() {
   document.getElementById('rScore').textContent = `${score} / ${scenarios.length}`;
   
   const msgs = [
-    "DIo porco",
-    "Bestia mamma di lecce",
-    "Nico negro",
-    "SImo negrone"
+    
+    "Non hai ancora colto appieno il senso del cyberbullismo. Prova a riflettere di più sull'impatto che le tue azioni possono avere sugli altri.",
+    "Potresti fare di meglio! Impegnandoti di più imparerai a riconoscere ogni rischio e a navigare in totale sicurezza.",
+    "Ti stai avvicinando al traguardo! Continua così per diventare un cittadino digitale sempre più consapevole.",
+    "Ottimo! Hai colto perfettamente il senso del cyberbullismo. Dimostri di capire che ogni azione online ha delle conseguenze reali."
   ];
   
   const msgIndex = score <= 1 ? 0 : score <= 3 ? 1 : score === 4 ? 2 : 3;
