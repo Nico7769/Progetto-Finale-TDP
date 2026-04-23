@@ -197,6 +197,41 @@
        
 
     </section>
+    <!--Sezione situazioni reali-->
+    <section class="sezione-colorata" id="scenari">
+        <div class="section-header">
+            <span class="titoletto-verde">ESERCIZI PRATICI</span>
+            <h2 class="section-title-informazioni" style="color: black;">Cosa faresti in<br> questa situazione?</h2>
+            <p class="section-subtitle">Mettiti alla prova con scenari reali. Scegli l'azione giusta e scopri le conseguenze.</p>
+        </div>
+        <div class="sc-wrap">
+  <div class="sc-head">
+    <h2>Scenario interattivo</h2>
+    <span class="sc-counter" id="counter">1 / 5</span>
+  </div>
+
+  <div id="sc-content">
+    <div class="sc-body">
+      <div class="sc-situation" id="situation"></div>
+      <div class="sc-question" id="question"></div>
+      <div class="sc-options" id="options"></div>
+      <div class="sc-feedback" id="feedback"></div>
+    </div>
+    <div class="sc-foot">
+      <button class="sc-next" id="nextBtn" onclick="next()">Avanti →</button>
+    </div>
+  </div>
+
+  <div class="sc-result" id="result">
+    <div class="result-score" id="rScore"></div>
+    <div class="result-label">risposte corrette</div>
+    <div class="result-msg" id="rMsg"></div>
+    <button class="sc-next show" onclick="restart()">Ricomincia</button>
+  </div>
+</div>
+       
+
+    </section>
 
 
     <!-- Sezione Contati per aiuto -->
@@ -264,6 +299,6 @@
         </div>
 
   </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>
