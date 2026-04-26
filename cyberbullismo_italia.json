@@ -1,0 +1,31 @@
+{
+  "ultimo_aggiornamento": "2026-04-26",
+  "paese": "Italia",
+  "statistiche_generali": {
+    "percentuale_giovani_vittime": 68.5,
+    "minori_denunciati_totali": 124,
+    "chiamate_supporto_totali": 4580
+  },
+  "leggi_vigenti": [
+    {
+      "id": "71-2017",
+      "titolo": "Legge 71/2017",
+      "descrizione": "Disposizioni a tutela dei minori per la prevenzione e il contrasto del fenomeno del cyberbullismo."
+    },
+    {
+      "id": "70-2024",
+      "titolo": "Legge 70/2024",
+      "descrizione": "Nuove norme sul bullismo e cyberbullismo con potenziamento del monitoraggio scolastico."
+    }
+  ],
+  "tipologie_fenomeno": [
+    {
+      "nome": "Body Shaming",
+      "percentuale": 72.5
+    },
+    {
+      "nome": "Esclusione Sociale",
+      "percentuale": 12.0
+    }
+  ]
+}

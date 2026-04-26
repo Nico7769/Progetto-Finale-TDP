@@ -1,0 +1,25 @@
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.stat-item h2 {
+  font-size: clamp(2.2rem, 2vw, 3.8rem);
+  font-weight: 700;
+  color: #b8d8be;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.stat-item p {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 300;
+  color: rgba(184, 216, 190, 0.7);
+  line-height: 1.5;
+  max-width: 180px;
+  margin: 0 auto;
+}
