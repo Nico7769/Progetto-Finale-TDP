@@ -6,6 +6,7 @@ html {
     }
 body{
     margin: 0;
+    
 }
 .sezione-colorata{
     background-color:rgb(234, 233, 227);
@@ -63,3 +64,6 @@ footer a{
 footer a:hover {
   color: lightgreen 
 }
+
+ 
+ 

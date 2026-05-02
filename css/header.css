@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #eae9e3;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    border: 1px lightgray solid;
+}
+
+/* lato destro (menu + bottone) */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* menu */
+.header-link {
+    display: flex;
+    gap: 30px;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+.header-link a:hover{
+    color: #2f6b4f;
+}
+
+/* bottone */
+.btn-aiuto {
+    background-color: #2f6b4f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}

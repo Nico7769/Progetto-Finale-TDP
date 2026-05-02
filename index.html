@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Header-->
+    <header>
+  <div class="header-content">
+    <h1 class="logo">Citta<span style="color: #2f6b4f;">Digitale</span></h1>
+
+    <div class="right-section">
+      <nav class="header-link">
+        <a href="#">Cos'è</a>
+        <a href="#Forme">Forme</a>
+        <a href="#">Legge</a>
+        <a href="#scenari">Scenari</a>
+        <a href="#scenari">Quiz</a>
+      </nav>
+
+      <a href="#contatti" class="btn-aiuto">Chiedi aiuto</a>
+    </div>
+  </div>
+</header>
+
+   <!--Sezione statistiche-->
+    <section class="sezione-verde" style="display: flex; flex-direction: row; padding:0;">
+    <div class="stat-item">
+        <h2 id="dato-vittime">0%</h2>
+        <p>% dei giovani coinvolti in episodi di bullismo e cyberbullismo</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-denunce">0</h2>
+        <p>minori denunciati nell'ultimo anno per reati online</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-chiamate">0</h2>
+        <p>chiamate di supporto gestite dai numeri di emergenza 114 e 1.96.96</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-leggi">0</h2>
+        <p>leggi specifiche approvate in Italia (L. 71/2017 e L. 70/2024)</p>
+    </div>
+   </section>
     
 
     <!-- Sezione Forme Cyberbullismo -->
@@ -197,10 +238,45 @@
        
 
     </section>
+    <!--Sezione situazioni reali-->
+    <section class="sezione-colorata" id="scenari">
+        <div class="section-header">
+            <span class="titoletto-verde">ESERCIZI PRATICI</span>
+            <h2 class="section-title-informazioni" style="color: black;">Cosa faresti in<br> questa situazione?</h2>
+            <p class="section-subtitle">Mettiti alla prova con scenari reali. Scegli l'azione giusta e scopri le conseguenze.</p>
+        </div>
+        <div class="sc-wrap">
+  <div class="sc-head">
+    <h2>Scenario interattivo</h2>
+    <span class="sc-counter" id="counter">1 / 5</span>
+  </div>
+
+  <div id="sc-content">
+    <div class="sc-body">
+      <div class="sc-situation" id="situation"></div>
+      <div class="sc-question" id="question"></div>
+      <div class="sc-options" id="options"></div>
+      <div class="sc-feedback" id="feedback"></div>
+    </div>
+    <div class="sc-foot">
+      <button class="sc-next" id="nextBtn" onclick="next()">Avanti →</button>
+    </div>
+  </div>
+
+  <div class="sc-result" id="result">
+    <div class="result-score" id="rScore"></div>
+    <div class="result-label">risposte corrette</div>
+    <div class="result-msg" id="rMsg"></div>
+    <button class="sc-next show" onclick="restart()">Ricomincia</button>
+  </div>
+</div>
+       
+
+    </section>
 
 
     <!-- Sezione Contati per aiuto -->
-    <section class="sezione-verde">
+    <section class="sezione-verde"  id="contatti">
          <div class="section-header">
             <span class="titoletto-verde">CHIEDI AIUTO</span>
             <h2 class="section-title-informazioni">Non sei solo/a.<br> Ecco dove trovare aiuto.</h2>
@@ -264,6 +340,7 @@
         </div>
 
   </footer>
-    
+    <script src="main.js"></script>
+    <script src="javascript/statistiche.js"></script>
 </body>
 </html>
