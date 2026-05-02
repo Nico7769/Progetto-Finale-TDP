@@ -1,0 +1,41 @@
+.legge-timeline{
+    flex: 1.5; /* Più larga */
+    border-left: 2px solid #aaa29e; /* La linea verticale */
+    padding-left: 15px;
+    
+    
+    
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -23px; /* Centrato sulla linea */
+    top: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(50, 168, 29);
+    border: 3px solid #2f6b4f;
+    border-radius: 50%;
+}
+.timeline-item {
+    position: relative;
+   
+    width:80%;
+   
+}
+.timeline-item p {
+    font-size: 14px;      /* Testo più piccolo per ordine */
+    line-height: 1.5;     /* Interlinea più stretta per compattezza */
+    color: #555;          /* Grigio scuro, meno pesante del nero */
+    
+}
+.badge {
+    
+    padding: 4px 10px;   
+    background: #d8e5ce;
+    color: #2f6b4f;       /* Riprendi il verde del tuo brand */
+    border-radius: 9px;   /* Meno arrotondato se vuoi un look più serio */
+    font-size: 11px;
+    font-weight: 600;
+   
+}

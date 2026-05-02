@@ -15,7 +15,7 @@
     font-size: 15px;      
     font-weight: 400;
     line-height: 1.6;
-    color: #4c4b4b;            
+    color:  #585656;          
     max-width: 60ch; 
     letter-spacing: 1.2;       
     
@@ -55,4 +55,38 @@
     color:white;
     font-weight: bolder;
 
+}
+.legge-info p{
+    
+     color: #585656;
+     font-size: 14px;
+}
+.box-grigio h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    
+    color: #111;
+}
+.box-grigio h4{
+    font-size: 18px;
+    
+}
+
+
+.testo-punto p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color:#585656;
+}
+.box-rosso p {
+    margin-top: 16px;
+    font-size: 14px;               /* Testo leggermente più piccolo e ordinato */
+    line-height: 1.6;
+    color: #585656;                /* Testo rosso scuro per leggibilità */
+}
+.box-rosso strong {
+    color: #b91c1c; 
+    font-size: 16px;              /* Titolo interno ancora più evidente */
+    margin-right: 5px;
 }

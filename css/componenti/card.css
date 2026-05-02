@@ -2,11 +2,25 @@
    
     display: grid;
     align-self: center;
-    grid-template-columns: repeat(3, 1fr); /* creo una griglia con 3 colonne che si dividono equamente lo spazio*/
+   grid-template-columns: 1fr;
     gap: 20px;
     padding:1%;
     
     
+    
+}
+/* Quando lo schermo è medio (Tablet - sopra i 768px), passiamo a 2 colonne */
+@media (min-width: 768px) {
+    .griglia-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Quando lo schermo è grande (Desktop - sopra i 1024px), torniamo alle tue 3 colonne */
+@media (min-width: 1024px) {
+    .griglia-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .two-columns{
     grid-template-columns: repeat(2, 1fr);
@@ -58,6 +72,7 @@
     line-height: 1.3;
     font-size: 15px;
     font-weight: 400;
+    color: #585656;
    
 }
 .card-elenco{
