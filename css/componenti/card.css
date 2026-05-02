@@ -1,10 +1,11 @@
 .griglia-cards{  
-    max-width: 95%;
+   
     display: grid;
     align-self: center;
     grid-template-columns: repeat(3, 1fr); /* creo una griglia con 3 colonne che si dividono equamente lo spazio*/
     gap: 20px;
     padding:1%;
+    
     
 }
 .two-columns{
