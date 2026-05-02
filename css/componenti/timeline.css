@@ -10,7 +10,7 @@
     content: '';
     position: absolute;
     left: -23px; /* Centrato sulla linea */
-    top: 45px;
+    top: 30px;
     width: 10px;
     height: 10px;
     background-color: rgb(50, 168, 29);

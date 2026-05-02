@@ -1,12 +1,11 @@
 .section-title{
-    font-size: 35px;        
-    font-weight: 790;
-    letter-spacing: -1.5px; /*cambia spazio tra lettere*/
-    line-height: 1.1;  /*cambia spazio tra le righe*/     
-    color: #111;
-    font-family:'Syne', sans-serif;
-    max-width: 60ch; /*evita righe troppo lunghe*/
-    margin-bottom: 5px;
+   color: rgb(19, 19, 19);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 0.95; 
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
     
 
 }
@@ -38,7 +37,7 @@
     color: rgba(255, 255, 255, 0.7)
 }
 .titoletto-verde{
-    color: rgb(112, 196, 112);
+    color: rgb(42, 136, 101);
     display: block;
     font-family: 'Syne', sans-serif; 
     font-size: 12px;
