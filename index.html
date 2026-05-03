@@ -186,15 +186,78 @@
 
     </section>
  
+    <!--Sezione situazioni reali-->
+    <section class="sezione-colorata" id="scenari">
+        <div class="section-header">
+            <span class="titoletto-verde">ESERCIZI PRATICI</span>
+            <h2 class="section-title-informazioni" style="color: black;">Cosa faresti in<br> questa situazione?</h2>
+            <p class="section-subtitle">Mettiti alla prova con scenari reali. Scegli l'azione giusta e scopri le conseguenze.</p>
+        </div>
+        <div class="sc-wrap">
+            <div class="sc-head">
+                <h2>Scenario interattivo</h2>
+    <span class="sc-counter" id="counter">1 / 5</span>
+  </div>
+
+  <div id="sc-content">
+    <div class="sc-body">
+        <div class="sc-situation" id="situation"></div>
+      <div class="sc-question" id="question"></div>
+      <div class="sc-options" id="options"></div>
+      <div class="sc-feedback" id="feedback"></div>
+    </div>
+    <div class="sc-foot">
+      <button class="sc-next" id="nextBtn" onclick="next()">Avanti →</button>
+    </div>
+</div>
+
+<div class="sc-result" id="result">
+    <div class="result-score" id="rScore"></div>
+    <div class="result-label">risposte corrette</div>
+    <div class="result-msg" id="rMsg"></div>
+    <button class="sc-next show" onclick="restart()">Ricomincia</button>
+</div>
+</div>
+
+
+</section>
+<!--Sezione quiz-->
+<section class="sezione-bianca">
+    <div id="quiz-app">
+    <div class="progress-container">
+        <div id="stepProgress" class="progress-fill"></div>
+    </div>
+
+    <div id="quiz-board">
+        <div id="stepIndicator" class="meta-label"></div>
+        <h2 id="currentTaskTitle">Inizializzazione...</h2>
+        
+        <div id="choiceGrid" class="options-layout"></div>
+        
+        <div id="infoPanel" class="status-panel"></div>
+        
+        <button id="actionBtn" class="primary-button" onclick="proceed()">PROSEGUI</button>
+    </div>
+
+    <div id="finalSummary" style="display:none; text-align: center;">
+        <h1>Esito Finale: <span id="finalScoreDisplay"></span></h1>
+        <p id="evaluationMsg"></p>
+        <button class="primary-button" onclick="location.reload()">RIPETI TEST</button>
+    </div>
+</div>
+        
+    </section>
+
+
     <!-- Sezione Come Proteggersi -->
     <section class="sezione-colorata">
-
+    
         <div class="section-header">  <!-- Contenitore scritte -->
             <span class="titoletto-verde"> COME PROTEGGERSI</span>
             <h2 class="section-title">Strumenti di difesa e buone pratiche</h2>
             <p class="section-subtitle">Azioni concrete che puoi adottare subito per proteggere te stesso e chi ti vuole bene.</p>
         </div>
-
+    
         <div class="griglia-cards two-columns">
             <div class="card">
                 <div class="card-emoji ">🛡️</div>
@@ -304,47 +367,12 @@
                     </li>
                 </ul>
             </div>
-
-
+    
+    
         </div>
-   
+    
        
-
-    </section>
-    <!--Sezione situazioni reali-->
-    <section class="sezione-colorata" id="scenari">
-        <div class="section-header">
-            <span class="titoletto-verde">ESERCIZI PRATICI</span>
-            <h2 class="section-title-informazioni" style="color: black;">Cosa faresti in<br> questa situazione?</h2>
-            <p class="section-subtitle">Mettiti alla prova con scenari reali. Scegli l'azione giusta e scopri le conseguenze.</p>
-        </div>
-        <div class="sc-wrap">
-  <div class="sc-head">
-    <h2>Scenario interattivo</h2>
-    <span class="sc-counter" id="counter">1 / 5</span>
-  </div>
-
-  <div id="sc-content">
-    <div class="sc-body">
-      <div class="sc-situation" id="situation"></div>
-      <div class="sc-question" id="question"></div>
-      <div class="sc-options" id="options"></div>
-      <div class="sc-feedback" id="feedback"></div>
-    </div>
-    <div class="sc-foot">
-      <button class="sc-next" id="nextBtn" onclick="next()">Avanti →</button>
-    </div>
-  </div>
-
-  <div class="sc-result" id="result">
-    <div class="result-score" id="rScore"></div>
-    <div class="result-label">risposte corrette</div>
-    <div class="result-msg" id="rMsg"></div>
-    <button class="sc-next show" onclick="restart()">Ricomincia</button>
-  </div>
-</div>
-       
-
+    
     </section>
 
 
