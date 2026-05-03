@@ -223,30 +223,43 @@
 </section>
 <!--Sezione quiz-->
 <section class="sezione-bianca">
-    <div id="quiz-app">
-    <div class="progress-container">
-        <div id="stepProgress" class="progress-fill"></div>
+  <div class="section-header">
+    <span class="titoletto-verde">METTI ALLA PROVA</span>
+    <h2 class="section-title">Quiz — Quanto sai<br>sul cyberbullismo?</h2>
+    <p class="section-subtitle">Rispondi alle domande e scopri quanto conosci le leggi e i fenomeni del cyberbullismo.</p>
+  </div>
+
+  <div class="qz-wrap">
+    <div class="qz-head">
+      <h2>Quiz — Cyberbullismo e leggi</h2>
+      <span class="qz-counter" id="qz-counter">1 / 10</span>
+    </div>
+    <div class="qz-progress-wrap">
+      <div class="qz-progress-bar" id="progressBar"></div>
     </div>
 
-    <div id="quiz-board">
-        <div id="stepIndicator" class="meta-label"></div>
-        <h2 id="currentTaskTitle">Inizializzazione...</h2>
-        
-        <div id="choiceGrid" class="options-layout"></div>
-        
-        <div id="infoPanel" class="status-panel"></div>
-        
-        <button id="actionBtn" class="primary-button" onclick="proceed()">PROSEGUI</button>
+    <div id="qz-content">
+      <div class="qz-body">
+        <div class="qz-question" id="qz-question"></div>
+        <div class="qz-options" id="qz-options"></div>
+        <div class="qz-feedback" id="qz-feedback"></div>
+      </div>
+      <div class="qz-foot">
+        <button class="qz-next" id="qz-nextBtn" onclick="qzNext()">Avanti →</button>
+      </div>
     </div>
 
-    <div id="finalSummary" style="display:none; text-align: center;">
-        <h1>Esito Finale: <span id="finalScoreDisplay"></span></h1>
-        <p id="evaluationMsg"></p>
-        <button class="primary-button" onclick="location.reload()">RIPETI TEST</button>
+    <div class="qz-result" id="qz-result">
+      <div class="result-score" id="qz-rScore"></div>
+      <div class="result-label">risposte corrette</div>
+      <div class="result-progress-wrap">
+        <div class="result-progress-bar" id="rBar" style="width: 0%;"></div>
+      </div>
+      <div class="result-msg" id="qz-rMsg"></div>
+      <button class="qz-next show" onclick="qzRestart()">Ricomincia</button>
     </div>
-</div>
-        
-    </section>
+  </div>
+</section>
 
 
     <!-- Sezione Come Proteggersi -->
@@ -443,5 +456,6 @@
   </footer>
     <script src="main.js"></script>
     <script src="javascript/statistiche.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
