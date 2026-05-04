@@ -8,6 +8,109 @@ body{
     margin: 0;
     
 }
+
+/* Reset di base per togliere margini predefiniti dei browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Definiamo i colori come variabili per riutilizzarli facilmente */
+    --bg-color: #f5f4ee;       /* Il beige chiaro dello sfondo */
+    --text-dark: #1a1a1a;      /* Il quasi-nero del testo principale */
+    --brand-green: #2d6a4f;    /* Il verde scuro dei pulsanti e della parola evidenziata */
+    --badge-bg: #e3e8e3;       /* Colore di sfondo del badge in alto */
+    --font-main: 'Inter', sans-serif, Arial; /* Font pulito e moderno */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    min-height: 100vh; /* Centra verticalmente il contenuto nella pagina */
+    padding-left: 10%; /* Crea lo spazio a sinistra come nell'immagine */
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Stile del piccolo badge in alto */
+.badge {
+    display: inline-block;
+    background-color: var(--badge-bg);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.dot {
+    color: var(--brand-green);
+    margin-right: 5px;
+}
+
+/* Titolo: Usiamo un font-weight molto alto (900) e un line-height stretto */
+h1 {
+    font-size: clamp(3rem, 8vw, 5rem); /* Dimensione fluida che si adatta allo schermo */
+    line-height: 0.95;
+    font-weight: 900;
+    text-transform: none;
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.highlight {
+    color: var(--brand-green);
+}
+
+/* Descrizione */
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+/* Contenitore Pulsanti */
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* Stile comune ai pulsanti */
+.btn {
+    text-decoration: none;
+    padding: 18px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Effetto al passaggio del mouse */
+    opacity: 0.9;
+}
+
+/* Pulsante Verde */
+.btn-primary {
+    background-color: var(--brand-green);
+    color: white;
+}
+
+/* Pulsante Trasparente/Bordato */
+.btn-secondary {
+    border: 1px solid #ccc;
+    color: var(--text-dark);
+}
+
 .sezione-colorata, 
 .sezione-bianca, 
 .sezione-verde {
@@ -111,6 +214,8 @@ footer a:hover {
     padding: 20px;                 /* Spazio interno */
     margin-top: 10px;              /* Distanza dal box grigio sopra */
 }
+
+
 
  
  
