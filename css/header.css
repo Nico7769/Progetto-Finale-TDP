@@ -5,11 +5,17 @@ header {
     background-color: #eae9e3;
 }
 
+.logo{
+    margin: auto;
+    margin-left: 0;
+    font-size: 60px;
+}
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 40px;
+    padding: 12px 20px;
     border: 1px lightgray solid;
     flex-wrap: wrap; /*DA SPIEGARE EVITA SBORDAMENTO A DESTRA*/
 }

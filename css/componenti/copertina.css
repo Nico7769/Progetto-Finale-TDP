@@ -1,4 +1,4 @@
-/* Reset di base per togliere margini predefiniti dei browser */
+/*togliere margini predefiniti dei browser */
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +7,21 @@
 
 :root {
     /* Definiamo i colori come variabili per riutilizzarli facilmente */
-    --bg-color: #f5f4ee;       /* Il beige chiaro dello sfondo */
-    --text-dark: #1a1a1a;      /* Il quasi-nero del testo principale */
-    --brand-green: #2d6a4f;    /* Il verde scuro dei pulsanti e della parola evidenziata */
-    --badge-bg: #e3e8e3;       /* Colore di sfondo del badge in alto */
-    --font-main: 'Inter', sans-serif, Arial; /* Font pulito e moderno */
+    --bg-color: #f5f4ee;       
+    --text-dark: #1a1a1a;      
+    --brand-green: #2d6a4f;    
+    --badge-bg: #e3e8e3;       
+    --font-main: 'Inter', sans-serif, Arial; 
 }
 
-body {
+.copertina {
     background-color: var(--bg-color);
     font-family: var(--font-main);
     color: var(--text-dark);
     display: flex;
     align-items: center;
     min-height: 100vh; /* Centra verticalmente il contenuto nella pagina */
-    padding-left: 10%; /* Crea lo spazio a sinistra come nell'immagine */
+    padding-left: 5%; /* Crea lo spazio a sinistra come nell'immagine */
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
     margin-right: 5px;
 }
 
-/* Titolo: Usiamo un font-weight molto alto (900) e un line-height stretto */
+
 h1 {
     font-size: clamp(3rem, 8vw, 5rem); /* Dimensione fluida che si adatta allo schermo */
     line-height: 0.95;
