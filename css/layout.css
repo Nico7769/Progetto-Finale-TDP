@@ -79,6 +79,10 @@ footer a:hover {
     
     padding: 1.2%;
 }
+.adattato{
+   border-left: 0px;
+   padding-right: 3%;
+}
 .legge-info {
     flex: 1.5; /* Più stretta */
     display: flex;
@@ -111,6 +115,10 @@ footer a:hover {
     border-radius: 12px;           /* Angoli arrotondati coerenti con le card */
     padding: 20px;                 /* Spazio interno */
     margin-top: 10px;              /* Distanza dal box grigio sopra */
+}
+.verde{
+    background-color:rgb(219, 233, 221);
+    border-color:rgb(191, 237, 198) ;
 }
 
 

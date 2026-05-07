@@ -48,6 +48,8 @@
 .accordion-item {
   border-bottom: 1px solid var(--border-color);
   padding: 1.5rem 0;
+  
+  width: 90%;
 }
 
 .accordion-item:first-child {

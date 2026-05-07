@@ -51,20 +51,42 @@
 
             <!-- Gruppo di pulsanti -->
             <div class="button-group">
-                <a href="#" class="btn btn-primary">Inizia a scoprire &rarr;</a>
+                <a href="#cosa-e" class="btn btn-primary">Inizia a scoprire &rarr;</a>
                 <a href="#scenari" class="btn btn-secondary">Fai il quiz</a>
             </div>
         </div>
     </section>
+
+     <section class="sezione-verde" style="display: flex; flex-direction: row;padding: 1rem;">
+    <div class="stat-item">
+        <h2 id="dato-vittime">0%</h2>
+        <p>% dei giovani coinvolti in episodi di bullismo e cyberbullismo</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-denunce">0</h2>
+        <p>minori denunciati nell'ultimo anno per reati online</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-chiamate">0</h2>
+        <p>chiamate di supporto gestite dai numeri di emergenza 114 e 1.96.96</p>
+    </div>
+
+    <div class="stat-item">
+        <h2 id="dato-leggi">0</h2>
+        <p>leggi specifiche approvate in Italia (L. 71/2017 e L. 70/2024)</p>
+    </div>
+   </section>
   <!-- COS'È -->
-<section id="cosa-e">
-  <div class="section-header reveal">
-    <span class="section-tag">Fondamenti</span>
+<section  class="sezione-bianca" id="cosa-e">
+  <div class="section-header ">
+    <span class="titoletto-verde">Fondamenti</span>
     <h2 class="section-title">Cos'è la cittadinanza digitale?</h2>
-    <p class="section-desc">Essere cittadini attivi nella rete significa acquisire consapevolezza delle proprie azioni online e sviluppare responsabilità individuale e collettiva.</p>
+    <p class="section-subtitle">Essere cittadini attivi nella rete significa acquisire consapevolezza delle proprie azioni online e sviluppare responsabilità individuale e collettiva.</p>
   </div>
-  <div class="what-flex">
-    <div class="reveal">
+  <div class="legge-container">
+    <div class="legge-timeline adattato">
       <div class="accordion-item">
         <div class="accordion-trigger" onclick="toggleAccordion(this)">
           <span>Definizione di cittadinanza digitale</span>
@@ -111,58 +133,40 @@
         </div>
       </div>
     </div>
-    <div class="info-card reveal">
-      <h3>I 9 pilastri della cittadinanza digitale</h3>
-      <div class="tag-cloud">
-        <span class="tag tag-green">Accesso digitale</span>
-        <span class="tag tag-blue">Commercio digitale</span>
-        <span class="tag tag-amber">Comunicazione</span>
-        <span class="tag tag-green">Alfabetizzazione</span>
-        <span class="tag tag-red">Etichetta online</span>
-        <span class="tag tag-blue">Diritto digitale</span>
-        <span class="tag tag-amber">Salute e benessere</span>
-        <span class="tag tag-green">Sicurezza digitale</span>
-        <span class="tag tag-red">Responsabilità</span>
-      </div>
-      <p style="margin-top:24px;font-size:15px;color:var(--ink2);font-weight:300;line-height:1.65;">
-        Ogni pilastro rappresenta una competenza fondamentale che ogni cittadino digitale dovrebbe sviluppare. La loro integrazione forma un individuo capace di navigare il mondo digitale in modo critico, sicuro e responsabile.
-      </p>
-      <div style="margin-top:24px;padding:16px;background:rgba(45,106,79,0.06);border-radius:var(--radius);border-left:3px solid var(--accent);">
-        <p style="font-size:14px;color:var(--accent2);font-weight:500;">💡 Lo sapevi?</p>
-        <p style="font-size:14px;color:var(--ink2);margin-top:4px;font-weight:300;">In Italia l'educazione alla cittadinanza digitale è diventata obbligatoria nelle scuole con la Legge 92/2019 sull'educazione civica, che prevede almeno 33 ore annue di insegnamento trasversale.</p>
-      </div>
+    <div class="legge-info">
+        <div class="box-grigio">
+            <h3>I 9 pilastri della cittadinanza digitale</h3>
+            <div class="tag-cloud">
+                <span class="tag tag-green">Accesso digitale</span>
+                <span class="tag tag-blue">Commercio digitale</span>
+                <span class="tag tag-amber">Comunicazione</span>
+                <span class="tag tag-green">Alfabetizzazione</span>
+                <span class="tag tag-red">Etichetta online</span>
+                <span class="tag tag-blue">Diritto digitale</span>
+                <span class="tag tag-amber">Salute e benessere</span>
+                <span class="tag tag-green">Sicurezza digitale</span>
+                <span class="tag tag-red">Responsabilità</span>
+            </div>
+            <p style="margin-top:24px;font-size:15px;color:var(--ink2);font-weight:300;line-height:1.65;">
+                Ogni pilastro rappresenta una competenza fondamentale che ogni cittadino digitale dovrebbe sviluppare. La loro integrazione forma un individuo capace di navigare il mondo digitale in modo critico, sicuro e responsabile.
+            </p>
+            <div class="box-rosso verde">
+                <span>💡</span>
+                <strong>Lo sapevi?</strong>
+                <p class="testo-sanzioni" >In Italia l'educazione alla cittadinanza digitale è diventata obbligatoria nelle scuole con la Legge 92/2019 sull'educazione civica, che prevede almeno 33 ore annue di insegnamento trasversale.</p>
+            </div>
+        </div>
     </div>
   </div>
 </section>
 
 
    <!--Sezione statistiche-->
-    <section class="sezione-verde" style="display: flex; flex-direction: row; padding:0;">
-    <div class="stat-item">
-        <h2 id="dato-vittime">0%</h2>
-        <p>% dei giovani coinvolti in episodi di bullismo e cyberbullismo</p>
-    </div>
+   
 
-    <div class="stat-item">
-        <h2 id="dato-denunce">0</h2>
-        <p>minori denunciati nell'ultimo anno per reati online</p>
-    </div>
 
-    <div class="stat-item">
-        <h2 id="dato-chiamate">0</h2>
-        <p>chiamate di supporto gestite dai numeri di emergenza 114 e 1.96.96</p>
-    </div>
 
-    <div class="stat-item">
-        <h2 id="dato-leggi">0</h2>
-        <p>leggi specifiche approvate in Italia (L. 71/2017 e L. 70/2024)</p>
-    </div>
-   </section>
-.
-
-</body>
-</html>
-   </section>
+   
 
     <!-- Sezione Forme Cyberbullismo -->
     <section class="sezione-colorata" id="Forme">
