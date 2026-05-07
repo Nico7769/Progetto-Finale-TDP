@@ -139,9 +139,9 @@
 }
 
 .support-number {
-    font-family: oldstyle-nums;
-    font-size: clamp(26px, 5vw, 32px);
-    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 42px);
+    font-weight: 400;
     color: #A8D5BA;
     letter-spacing: -1px;
     margin-bottom: 8px;

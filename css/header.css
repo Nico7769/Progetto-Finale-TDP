@@ -9,6 +9,7 @@ header {
     margin: auto;
     margin-left: 0;
     font-size: 60px;
+    word-wrap: break-word;
 }
 
 .header-content {
@@ -50,4 +51,19 @@ header {
     border-radius: 25px;
     text-decoration: none;
     font-size: 14px;
+}
+/* Logo color accent (header) */
+.logo .highlight {
+    color: #2f6b4f;
+    
+}
+
+/* Logo come <p> per rispettare la gerarchia H1 (W3C) */
+p.logo {
+    margin: auto;
+    margin-left: 0;
+    font-size: 46px;
+    font-weight: 900;
+    font-family: 'Syne', sans-serif;
+    color: #1a1a1a;
 }

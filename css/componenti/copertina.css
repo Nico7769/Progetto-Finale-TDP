@@ -1,23 +1,11 @@
-/*togliere margini predefiniti dei browser */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    /* Definiamo i colori come variabili per riutilizzarli facilmente */
-    --bg-color: #f5f4ee;       
-    --text-dark: #1a1a1a;      
-    --brand-green: #2d6a4f;    
-    --badge-bg: #e3e8e3;       
-    --font-main: 'Inter', sans-serif, Arial; 
-}
+
+
 
 .copertina {
-    background-color: var(--bg-color);
-    font-family: var(--font-main);
-    color: var(--text-dark);
+    background-color: #f5f4ee;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1a1a1a;
     display: flex;
     align-items: center;
     min-height: 100vh; /* Centra verticalmente il contenuto nella pagina */
@@ -31,7 +19,7 @@
 /* Stile del piccolo badge in alto */
 .badge {
     display: inline-block;
-    background-color: var(--badge-bg);
+   background-color: #e3e8e3;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -42,12 +30,12 @@
 }
 
 .dot {
-    color: var(--brand-green);
+   color: #2d6a4f;
     margin-right: 5px;
 }
 
 
-h1 {
+.copertina h1 {
     font-size: clamp(3rem, 8vw, 5rem); /* Dimensione fluida che si adatta allo schermo */
     line-height: 0.95;
     font-weight: 900;
@@ -57,7 +45,7 @@ h1 {
 }
 
 .highlight {
-    color: var(--brand-green);
+    color: #2d6a4f;
 }
 
 /* Descrizione */
@@ -90,12 +78,12 @@ h1 {
 
 /* Pulsante Verde */
 .btn-primary {
-    background-color: var(--brand-green);
+    background-color: #2d6a4f;
     color: white;
 }
 
 /* Pulsante Trasparente/Bordato */
 .btn-secondary {
     border: 1px solid #ccc;
-    color: var(--text-dark);
+    color: #1a1a1a;
 }

@@ -1,36 +1,17 @@
-/* --- Variabili globali --- */
-:root {
-  --bg-color2: #ffffff;
-  --text-main: #1a1a1a;
-  --ink2: #4a4a4a;
-  --accent: #2d6a4f; /* Verde scuro */
-  --accent2: #1b4332; /* Verde ancora più scuro */
-  --card-bg: #f7f6f2; /* Beige chiaro per la card */
-  --radius: 16px;
-  --border-color: #e5e5e5;
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
 
 /* --- Tipografia e Intestazione --- */
 .section-tag {
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 1px;
-  color: var(--ink2);
+  color: #4a4a4a;
   font-weight: 600;
 }
 
-.section-title {
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.1;
-  margin: 0.5rem 0 1rem 0;
-  letter-spacing: -1px;
-}
 
 .section-desc {
   font-size: 1.1rem;
-  color: var(--ink2);
+  color: #4a4a4a;
   max-width: 600px;
   margin-bottom: 3rem;
 }
@@ -46,7 +27,7 @@
 
 /* --- Lista Accordion (Sinistra) --- */
 .accordion-item {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #e5e5e5;
   padding: 1.5rem 0;
   
   width: 90%;
@@ -70,12 +51,12 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  color: var(--ink2);
+  color: #4a4a4a;
   transition: all 0.3s ease;
   user-select: none;
 }
@@ -90,7 +71,7 @@
 
 .accordion-body p {
   margin: 0;
-  color: var(--ink2);
+  color: #4a4a4a;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -101,9 +82,9 @@
 }
 
 .accordion-item.active .accordion-icon {
-  background-color: var(--accent);
+  background-color: #2d6a4f;
   color: white;
-  border-color: var(--accent);
+  border-color: #2d6a4f;
   transform: rotate(45deg); /* Trasforma il + in una X */
 }
 
@@ -115,7 +96,7 @@
 
 /* --- Info Card (Destra) --- */
 .info-card {
-  background-color: var(--card-bg);
+  background-color:  #f7f6f2;
   border-radius: var(--radius);
   padding: 2.5rem;
   border: 1px solid #ebeae4;

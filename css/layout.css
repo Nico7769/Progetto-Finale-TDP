@@ -6,6 +6,7 @@ html {
     }
 body{
     margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
     
 }
 
@@ -36,6 +37,8 @@ body{
     border-width: 4px;  
     max-width: 70%;
     margin: 0 ;
+    
+    box-sizing: border-box;
 }
 ì
 .container-header{

@@ -3,13 +3,20 @@
    color: rgb(19, 19, 19);
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 55px;
+    
     line-height: 0.95; 
     margin-bottom: 30px;
     letter-spacing: -0.02em;
+    width: 100%;
     
+    
+    
+    font-size: 50px;
+    word-wrap: break-word;
 
 }
+
+
 .section-subtitle{
     margin-top: 0;
     font-size: 15px;      
@@ -47,14 +54,6 @@
     margin-top: 20px;
     padding-top: 30px;
     opacity: 0.8;
-}
-.little-text{
-    font-family: 'Inter', sans-serif; 
-    font-size: 14px;
-    line-height: 1.6;
-    color:white;
-    font-weight: bolder;
-
 }
 .legge-info p{
     
