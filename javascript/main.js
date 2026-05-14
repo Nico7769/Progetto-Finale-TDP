@@ -4,14 +4,14 @@ let score = 0;
 let answered = false;
 
 
-async function loadScenarios() {
+async function loadScenarios() { /*funzione asincrona(niente conferma ricevuta dati) */
     try {
-        const response = await fetch('scenarios.json');
-        if (!response.ok) throw new Error("Errore nel caricamento del file JSON");
+        const response = await fetch('scenarios.json'); /*con await attende che avvenga il fetch */
+        if (!response.ok) throw new Error("Errore nel caricamento del file JSON"); 
         
-        scenarios = await response.json();
+        scenarios = await response.json(); /* rende response in formato json per poterlo usare */
         render(); 
-    } catch (error) {
+    } catch (error) { 
         console.error(error);
         document.getElementById('situation').textContent = "Errore nel caricamento delle domande.";
     }
@@ -20,11 +20,11 @@ async function loadScenarios() {
 function render() {
     if (scenarios.length === 0) return;
 
-    const s = scenarios[current];
+    const s = scenarios[current];/* prendo l'oggetot che contiene situazione,domanda,opzioni*/
     const optionsContainer = document.getElementById('options');
     
     optionsContainer.innerHTML = ''; 
-    document.getElementById('counter').textContent = `${current + 1} / ${scenarios.length}`;
+    document.getElementById('counter').textContent = `${current + 1} / ${scenarios.length}`; /*riempi contenitore che indica a quale domanda sei */
     document.getElementById('situation').textContent = s.situation;
     document.getElementById('question').textContent = s.question;
     
@@ -57,7 +57,7 @@ function pick(i) {
     buttons.forEach((b, index) => {
         b.disabled = true;
         if (index === i) {
-            b.classList.add(isCorrect ? 'correct' : 'wrong');
+            b.classList.add(isCorrect ? 'correct' : 'wrong'); /*arriva al btn cliccato, se corretto o meno aggiunge a classe css */
         } else if (s.options[index].correct) {
             b.classList.add('correct');
         } else {

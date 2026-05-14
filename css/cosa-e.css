@@ -76,7 +76,7 @@
   line-height: 1.6;
 }
 
-/* --- Stato Attivo (Aperto) --- */
+/*  Stato Attivo (Aperto)  */
 .accordion-item.active .accordion-trigger {
   font-size: 1.2rem;
 }
